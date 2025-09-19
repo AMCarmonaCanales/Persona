@@ -1,8 +1,8 @@
 package Persona;
 
-public class Alumno {
-	long matricula;
-	String nickname;
+public class Alumno extends Persona {
+	private long matricula;
+	protected String nickname;
 	
 	public Alumno(long mat, String nickname) {
 		this.matricula = mat;
@@ -11,7 +11,7 @@ public class Alumno {
 	
 	public Alumno() {
 		Persona p = new Persona();
-		p.
+		
 	}
 
 }

@@ -1,10 +1,10 @@
 package Persona;
 
 public class Persona {
-	int edad;
-	String nombre;
-	String apellido;
-	String fecha_nacimiento;
+	private int edad;
+	private String nombre;
+	private String apellido;
+	protected String fecha_nacimiento;
 	
 	public Persona(int edad, String nombre, String apellido, String fecha_nac) {
 		this.edad = edad;
@@ -17,20 +17,45 @@ public class Persona {
 		
 	}
 	
-	public void caminar() {
+	
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	private void caminar() {
 		System.out.println("Esta caminando...");
 	}
 	
-	public void dormir(int veces, String nombre) {
+	protected void dormir(int veces, String nombre) {
 		System.out.println(nombre + " esta durmiendo " + veces + " veces a la semana ");
 	}
 	
-	public double comer(double cantidad, String nombre) {
+	private double comer(double cantidad, String nombre) {
 		double resultado;
 		resultado = 78.55*cantidad;
 		return resultado;
 	}
-	public static void main(String[] args) {
+	private static void main(String[] args) {
 		Persona persona = new Persona();
 		
 		persona.caminar();
