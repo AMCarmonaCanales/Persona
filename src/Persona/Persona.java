@@ -66,7 +66,9 @@ public class Persona {
 		
 		System.out.println(persona_con.fecha_nacimiento);
 		
-	
+		Alumno alumno = new Alumno(); 
+		
+		
 	}
 	
 
